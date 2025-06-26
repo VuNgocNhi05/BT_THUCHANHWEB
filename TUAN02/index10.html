@@ -9,52 +9,91 @@
             .container{
                 display:grid;
                 grid-template-areas: 
-                    "header content footer";                ;
-                grid-template-columns: 1fr 3fr;
-                justify-content: center;
-                align-items: center;
-                border-width: 1px sold rgb(5, 97, 97);
-
+                    "header content footer";
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 20px;
+                border: 1px sold rgb(5, 97, 97);
+                padding: 20px;
+                
             }
             .header{
                 grid-area: header;
                 border-radius: 30px;
                 background-color: rgb(245, 242, 237);
-                border-width: 2px solid rgb(5, 97, 97);
+                border: 2px solid rgb(5, 97, 97);
             }
             .content{
+                display: block;
+                justify-content: space-around;
                 grid-area: content;
                 border-radius: 30px;
                 background-color: rgb(245, 242, 237);
-                border-width: 2px solid rgb(5, 97, 97);
+                border: 2px solid rgb(5, 97, 97);
+                
             }
             .footer{
                 grid-area: footer;
                 border-radius: 30px;
                 background-color: rgb(245, 242, 237);
-                border-width: 2px solid rgb(5, 97, 97);
+                border: 2px solid rgb(5, 97, 97);
             }
-            
+            .avatar {
+                border-radius: 30px;
                 
-            
+            }
+            .header:hover {
+                transform: scale(1.05);
+                background-color:aquamarine;
+            }
+            .content:hover{
+                transform: scale(1.05);
+                background-color:aquamarine;
+            }
+            .footer:hover{
+                transform: scale(1.05);
+                background-color:aquamarine;
+            }
+            h1{
+                text-align: center;
+                color: brown;
+            }
+            .name{
+                text-align: center;
+                color:brown
+            }
+            .project{
+                text-align: center;
+                color:rgb(22, 121, 121);
+            }
+            p{
+                text-align: center;
+                color: rgb(5, 97, 97);
+            }
+            a{
+                text-align: center;
+                color: rgb(5, 97, 97);
+                text-decoration: none;
+            }
+            a:hover{
+                color: rgb(221, 121, 6);
+                text-decoration: underline;
+            }
             body{
                 background-color: bisque;
             }
         </style>
         <body>
             <div class="container">
-                <div id="header">
-                    <img src="image/avatar.jpg" atl="Ảnh đại diện" high="200" width="200">
-                    <h1>Vũ Ngọc Nhi</h1>
-                    <p>Sinh viên năm 2 ngành Thương mại điện tử | thích những thứ bình yên và đơn giản</p>
+                <div class="header">
+                    <img src="image/avatar.jpg" atl="Ảnh đại diện" height="200" width="180" class="avatar">
+                    <h2 class="name">Vũ Ngọc Nhi</h2>
+                    <p>Sinh viên năm 2 ngành Thương mại điện tử </p>
                 </div>
-                <div id="content">
+                <div class="content">
                     <h1>Dự án cá nhân</h1>
-                    <h2>Dự án: Thực hành công nghệ web</h2>
-                    <div Dự án: bài thực hành công nghệ Web>
-                        <p>Mọi người xem dự án của mình tại đây nhé</p>
-                        <a href="https://github.com/VuNgocNhi05/BT_THUCHANHWEB" target="_blank"> Github BT_THUCHANHWEB</a>
-                    </div>
+                    <h2 class="project">Dự án: Thực hành công nghệ web</h2>                        
+                    <p>Mọi người xem dự án của mình tại đây nhé</p>
+                    <a href="https://github.com/VuNgocNhi05/BT_THUCHANHWEB" target="_blank"> Github BT_THUCHANHWEB</a>
                 </div>
                 <div class="footer">
                     <h2>Thông tin liên hệ</h2>

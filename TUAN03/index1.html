@@ -13,7 +13,9 @@
                 border-color: rgb(5, 97, 97);
                 border-style: solid;
                 background-color: bisque;
+                border-radius: 30px;
             }
+            
             p{
                 font-size: 25px;
                 text-align: center;
@@ -82,13 +84,24 @@
             .form button:hover{
                 background-color: rgb(246, 211, 114);
             }
-            .nav {
+            .menu {
                 display: flex;
-                
-                justify-content: space-around;
-                
-                
-                
+                justify-content: space-between;  
+                padding: 10px 40px;   
+            }
+            .menu a{
+                text-decoration: none;
+                color: rgb(10, 118, 154);
+                font-size: 25px;
+                padding: 10px;
+            }
+            .menu a:hover{
+                color: red;
+                text-decoration: underline;
+                font-size: 30px;
+            }
+            .myname{
+                color: rgb(151, 10, 10);
             }
         </style>
         <body>
@@ -96,7 +109,7 @@
             <div class="Name">
                 
                 <img src="image/avatar.jpg" height="200" width="150" alt="avatar" class="avatar">
-                <p> Vũ Ngọc Nhi</p>
+                <p class="myname"> Vũ Ngọc Nhi</p>
                 <p> Sinh viên năm 2 ngành thương mại điện tử</p>
 
             </div>
