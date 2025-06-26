@@ -1,0 +1,65 @@
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale-1.0">
+            <title>document</title>
+        </head>
+        <style>
+            .container{
+                display:grid;
+                grid-template-areas: 
+                    "header content footer";                ;
+                grid-template-columns: 1fr 3fr;
+                justify-content: center;
+                align-items: center;
+                border-width: 1px sold rgb(5, 97, 97);
+
+            }
+            .header{
+                grid-area: header;
+                border-radius: 30px;
+                background-color: rgb(245, 242, 237);
+                border-width: 2px solid rgb(5, 97, 97);
+            }
+            .content{
+                grid-area: content;
+                border-radius: 30px;
+                background-color: rgb(245, 242, 237);
+                border-width: 2px solid rgb(5, 97, 97);
+            }
+            .footer{
+                grid-area: footer;
+                border-radius: 30px;
+                background-color: rgb(245, 242, 237);
+                border-width: 2px solid rgb(5, 97, 97);
+            }
+            
+                
+            
+            body{
+                background-color: bisque;
+            }
+        </style>
+        <body>
+            <div class="container">
+                <div id="header">
+                    <img src="image/avatar.jpg" atl="Ảnh đại diện" high="200" width="200">
+                    <h1>Vũ Ngọc Nhi</h1>
+                    <p>Sinh viên năm 2 ngành Thương mại điện tử | thích những thứ bình yên và đơn giản</p>
+                </div>
+                <div id="content">
+                    <h1>Dự án cá nhân</h1>
+                    <h2>Dự án: Thực hành công nghệ web</h2>
+                    <div Dự án: bài thực hành công nghệ Web>
+                        <p>Mọi người xem dự án của mình tại đây nhé</p>
+                        <a href="https://github.com/VuNgocNhi05/BT_THUCHANHWEB" target="_blank"> Github BT_THUCHANHWEB</a>
+                    </div>
+                </div>
+                <div class="footer">
+                    <h2>Thông tin liên hệ</h2>
+                    <p>Liên hệ với mình qua đây để biết chi tiết hơn nhé</p>
+                    <a href="https://github.com/VuNgocNhi05" target="_blank">Github</a>
+                </div>
+            </div>
+        </body>
