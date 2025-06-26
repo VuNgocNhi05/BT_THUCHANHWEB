@@ -1,0 +1,176 @@
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale-1.0">
+            <title>document</title>
+        </head>
+        <style>
+            h1{
+                font-size: 30px;
+                text-align: center;
+                color: brown;
+                border-color: rgb(5, 97, 97);
+                border-style: solid;
+                background-color: bisque;
+            }
+            p{
+                font-size: 25px;
+                text-align: center;
+            }
+            .avatar {
+                border-radius: 30px;
+                box-shadow: 0 2px 5px rgb(7, 1, 1);
+                display: flex;
+                justify-content: center;
+                margin: 20px auto;
+            }
+            .subjects{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Tự co giãn từ 2 đến 3 cột */
+                gap: 20px;
+                padding: 20px;
+                justify-items: center;
+            }
+            .subjects li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px auto;
+                border: 1px solid rgb(5, 97, 97);
+                border-radius: 10%;
+                box-shadow: 0 2px 5px rgb(7, 1, 1);
+                width: 250;
+                height:50px;
+                font-size: 25px;
+                
+            }
+            .subjects li:hover{
+                transform: scale(1.05);
+                background-color: rgb(214, 243, 233);
+                font-size: 30px;
+            }
+            .timetable{
+                display: grid;
+                grid-template-columns: repeat(auto-fit);
+                justify-content: center;
+                margin: 20px 0;
+                gap: 10px;
+                
+            }
+            .timetable table {
+                border: 1px hidden rgb(5, 97, 97);
+                background-color: rgb(246, 211, 114);
+                text-align: center;
+                width:500px;
+            }
+            .form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .form-group {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-bottom: 15px;
+            background-color: rgb(239, 214, 87);
+        }
+            .form-group input:hover{
+                background-color: rgb(246, 211, 114);
+            }
+            .form button:hover{
+                background-color: rgb(246, 211, 114);
+            }
+            .nav {
+                display: flex;
+                
+                justify-content: space-around;
+                
+                
+                
+            }
+        </style>
+        <body>
+            <h1>Giới Thiệu Bản Thân</h1>
+            <div class="Name">
+                
+                <img src="image/avatar.jpg" height="200" width="150" alt="avatar" class="avatar">
+                <p> Vũ Ngọc Nhi</p>
+                <p> Sinh viên năm 2 ngành thương mại điện tử</p>
+
+            </div>
+            <h1>Môn Học Yêu Thích</h1>
+            <div class="subjects">
+                <ul>
+                    <li>Toán Học</li>
+                    <li>Ngữ Văn </li>
+                    <li>Lịch Sử</li>
+                    <li>Vật Lý</li>
+                </ul>
+            </div>
+            <h1>Thời Khóa Biểu</h1>
+            <div class="timetable">
+                
+                <table border="1">
+                    
+                    <tr>
+                        <th>Thứ</th>
+                        <th>Tiết 1</th>
+                        <th>Tiết 2</th>
+                        <th>Tiết 3</th>
+                        <th>Tiết 4</th>
+                    </tr>
+                    <tr>
+                        <td>Thứ 2</td>
+                        <td>Toán</td>
+                        <td>Toán</td>
+                        <td>Lịch sử</td>
+                        <td>Lịch sử</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ 3</td>
+                        <td>Hóa học</td>
+                        <td>Hóa học</td>
+                        <td>Vật lý</td>
+                        <td>Vật lý</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ 4</td>
+                        <td>Sinh học</td>
+                        <td>Sinh học</td>
+                        <td>Địa lý</td>
+                        <td>Địa lý</td>
+                    </tr>
+                </table>
+            </div>
+            <h1>Form Đăng Ký Thông Tin</h1>
+            <div class="form">
+                
+                <div class="form-group">
+                    <label for="name">Họ và Tên</label>
+                    <input type="text" id="name" placeholder="Nhập họ và tên" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Nhập email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số Điện Thoại</label>
+                    <input type="tel" id="phone" placeholder="Nhập số điện thoại" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Thông điệp</label>
+                    <input type="text" id="message" placeholder="Nhập thông điệp" required>
+                </div>
+                <button type="submit">Đăng ký</button>
+            </form>
+            </div>
+            <h1>Tìm Hiểu Thêm</h1>
+            <nav class="menu">
+                <a href="https://tuoitre.vn/">Tuổi trẻ</a>
+                <a href="https://tienphong.vn/">Tiền Phong</a>
+                <a href="https://laodong.vn/">Lao động</a>
+            </nav>
+            
+        </body>
