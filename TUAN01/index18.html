@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <style>
+            .container {
+                display: grid;
+                grid-template-areas: "menu"
+                                       "news"
+                                       "contact";
+                grid-template-columns: repeat(1, 1fr);
+                
+            }
+            .menu  {
+                grid-area: menu;
+                background-color: #3e96c2;
+                padding: 15px 30px;
+                
+                
+            }
+            .navbar {
+                display: flex;
+                justify-content: center;
+                
+            }
+            .items {
+                display: flex;
+                justify-content: space-evenly;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                max-width: 800px;
+            }
+            .items li a {
+                color:aliceblue;
+                text-decoration: none;
+            }
+            .items li a:hover {
+                color: rgb(0, 0, 0);
+                
+            }
+            .news, .contact {
+                background-color: aquamarine;
+                
+                
+                gap: 40px;
+            }
+            .news h2 {
+                color: rgb(250, 0, 0);
+                text-align: center;
+                font-size: 40px;
+                background-color: aliceblue;
+                padding: 0%;
+            }
+            .news h3 {
+                font-size: 30px;
+                text-align: space-around;
+            }
+            .news img {
+                box-shadow: 0 4px 8px rgba(44, 44, 44, 0.993);
+            }
+            .news p {
+                
+                font-size: 20px;
+                background-color: aliceblue;
+                width: 100%;
+            }
+            
+        </style>
+        <body>
+            <div class="container">
+                <div class="menu">
+                    <nav class="navbar">
+                        <ul class="items">
+                            <li><a href="#home">Trang Chủ</a></li>
+                            <li><a href="#news">Tin Tức</a></li>
+                            <li><a href="#contact">Liên Hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+               
+                <div class="news">
+                  <article>
+                    <h2>News</h2>
+                    <h3>Na Jaemin (NCT Dream) Chính Thức Trở 
+                        Thành Gương Mặt Đại Diện Mới của Isntree</h3>
+                    <img src="image/isntree.jpg" width="100%">
+                    <p>
+                        Ngành công nghiệp mỹ phẩm Hàn Quốc lại một lần 
+                        nữa chứng kiến sự kết hợp bùng nổ khi thành viên Na Jaemin
+                         của nhóm nhạc đình đám NCT Dream chính thức được công bố là 
+                         gương mặt đại diện toàn cầu cho thương hiệu chăm sóc da Isntree.
+                          Thông tin này đã nhanh chóng gây sốt trong cộng đồng
+                         fan K-pop và những người yêu thích làm đẹp, hứa hẹn sẽ
+                          mang đến một làn gió mới cho cả Isntree và Jaemin...
+                          <a href="#">Đọc tiếp</a>
+                    </p>
+                  </article> 
+                </div>
+                <div class="contact">
+                    <h3>Thông tin liên hệ</h3>
+                    <p>Hotline:0986099200</p>
+                    <p> Email: vnn****@gmail.com</p>
+                </div>
+            </div>
+        </body>
+    </html>
