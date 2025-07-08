@@ -1,0 +1,107 @@
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale-1.0">
+            <title>document</title>
+        </head>
+        <style>
+           body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(196, 222, 255);
+           }
+           .container {
+                border:1px solid black;
+                border-radius: 10px;
+                box-shadow: 0 2px 4px rgba(25, 45, 55);
+                background-color: azure;
+                width: 300px;
+                margin: 20px;
+                padding: 20px;
+           }
+           h2 {
+                font-size:30px;
+                color:blue;
+                text-align: center;
+           }
+           form {
+                font-size: 20px;
+                margin: 10px 0;
+                
+           }
+           .name {
+                box-shadow: 0 1px 2px rgb(159, 160, 160);
+                width: 300px;
+                height: 25px;
+           }
+           textarea {
+            width: 300px;
+            height: 50px;
+           }
+           select {
+            width: 300px;
+            height: 25px;
+           }
+           button {
+                
+                border: none;
+                background-color: rgb(2, 200, 250);
+                text-align: center;
+                color: white;
+                width: 300px;
+                height: 25px;
+           }
+           button:hover {
+                background-color: rgb(8, 173, 173);
+                transform: scale(1.25);
+           }
+           form label, form input, form textarea, form select {
+                display: inline-block;
+                margin-bottom: 5px;
+           }
+           input[type="radio"],
+            input[type="checkbox"] {
+                display: inline-block;
+                margin-right: 5px;
+            }
+        </style>
+        <body>
+            <div class="container">
+                <h2>Khảo Sát Ý Kiến</h2>
+                <form>
+                    <label>Họ và Tên:</label><br>
+                    <input class="name" type="text" placeholder="Nhập họ và tên" required><br>
+                    <label>Giới tính:</label><br>
+                    <input type="radio"  >
+                    <label >Nam</label><br>
+                    <input type="radio" >
+                    <label>Nữ</label><br>
+                    <label>Sở thích:</label><br>
+                    <input type="checkbox">
+                    <label>Thể thao</label><br>
+                    <input type="checkbox">
+                    <label>Âm Nhạc</label><br>
+                    <input type="checkbox">
+                    <label>Nấu ăn</label><br>
+                    <input type="checkbox">
+                    <label>Du lịch</label><br>
+                    <input type="checkbox">
+                    <label>Đọc sách</label><br>
+                    <label>Ý kiến của bạn:</label><br>
+                    <textarea placeholder="Nhập ký kiến của bạn" required></textarea><br>
+                    <label>Đánh giá dịch vụ:</label><br>
+                    <select required>
+                        <option>Chọn đánh giá</option>
+                        <option>Rất tốt</option>
+                        <option>Tốt</option>
+                        <option>Bình thường</option>
+                        <option>Tệ </option>
+                        <option>Rất tệ</option>
+                    </select><br>
+                    <button type="submit">Gửi ý kiến</button>
+                </form>
+            </div>
+        </body>
+    </html>
