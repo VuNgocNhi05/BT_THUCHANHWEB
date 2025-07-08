@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aquamarine;
+
+    }
+   
+    .container {
+        border:1px solid black;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(25, 45, 55);
+        background-color: azure;
+        width: 300px;
+        margin: 20px;
+        padding: 20px;
+        
+    }
+    h2 {
+        font-size: 35px;
+        align-items: center;
+    }
+    form{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    button{
+        background-color: aqua;
+    }
+    form input, form textarea, form button {
+        width: 300px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2> Form Đặt Bàn</h2>
+        <form>
+            <label for="name">Họ và Tên:</label><br>
+            <input id="name" type="text" placeholder="họ và tên"><br>
+            <label for="number">Số người: </label><br>
+            <input id="number" type="number" placeholder="số người"><br>
+            <label for="date"> Ngày - Giờ:</label><br>
+            <input id="date" type="datetime-local" placeholder="ngày-giờ"><br>
+            <label for="require">Yêu cầu:</label><br>
+            <textarea id="require" placeholder="nhập yêu cầu của bạn"></textarea><br>
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
+</body>
+</html>
