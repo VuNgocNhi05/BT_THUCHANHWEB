@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> check phone</h2>
+    <label for="phone">nhap sdt:</label>
+    <input type="text" id="phone" placeholder="0XXXXXXXXX">
+    <button onclick="phone()">check</button>
+    <div id="print" ></div>
+    <script>
+        function phone(){
+            const phone = document.getElementById("phone").value.trim();
+            const print = document.getElementById("print");
+            if (phone === ""){
+                print.textContent = "Please input";
+                print.classList.add("error");
+                print.style.color = "red";
+                return;
+            }
+            const regex = /^0[0-9]{9}$/;
+            if (regex.test(phone)){
+                print.textContent = "ban da nhap dung";
+                print.classList.add("success");
+                print.style.color = "green";
+                return;
+            }
+            print.textContent = "hay nhap theo dinh dang: 0XXXXXXXXX";
+            print.classList.add("error");
+            print.style.color = "red";
+            
+        }
+    </script>
+</body>
+</html>
