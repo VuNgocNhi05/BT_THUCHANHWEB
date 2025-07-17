@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> sum 2 number</h2>
+    <label for="num1">nhap so thu nhat:</label>
+    <input type="number" id="num1"><br>
+    <label for="num2">nhap so thu hai:</label>
+    <input type="number" id="num2"><br>
+    <button onclick="sum()">click</button>
+    <div id="print"></div>
+    <script>
+        function sum() {
+            const num1 = Number(document.getElementById("num1").value);
+            const num2 = Number(document.getElementById("num2").value);
+            const print = document.getElementById("print");
+            const sum = (num1) + (num2);
+            console.log(sum);
+            print.textContent = "Tong la:"+ sum;
+        }
+    </script>
+</body>
+</html>
