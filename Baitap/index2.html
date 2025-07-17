@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Hello</h2>
+        <label for="name">Nhap ten cua ban:</label>
+        <input type="text" id="name" placeholder="nhập tên của bạn">
+        <button onclick="helloweb()">Click</button>
+        <div id="print"></div>
+        <script>
+            function helloweb() {
+                const name2 = document.getElementById("name").value;
+                const print = document.getElementById("print").innerText = "Hello " +  name2;
+                
+            }
+        </script>
+    </div>
+</body>
+</html>
