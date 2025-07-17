@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+        <h2>sum 2 number</h2>
+        <label for="num1">nhap so thu nhat:</label>
+        <input type="text" id="num1"><br>
+        <label for="num2">nhap so thu hai:</label>
+        <input type="text" id="num2"><br>
+        <button onclick="sum()">click</button>
+        <div id="print"></div>
+        
+        <script>
+            function sum() {
+                const n1 = document.getElementById("num1").value.trim();
+                const n2 = document.getElementById("num2").value.trim();
+                const print = document.getElementById("print");
+                if (n1 === "" || n2 === "") {
+                    print.textContent = "hay nhap du 2 so";
+                    return;
+                }
+        
+                const num1 = Number(n1);
+                const num2 = Number(n2);
+
+                if (isNaN(num1) || isNaN(num2)) {
+                    print.textContent = "ban nhap khong phai la so";
+                    return;
+                }
+        
+                const sum = num1 + num2;
+                console.log(sum);
+                print.textContent = "Tong la: " + sum;
+            }
+        </script>
+    
+</body>
+</html>
