@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> check so</h2>
+    <label for="num">nhap:</label>
+    <input type="text" id="num" placeholder="nhap...">
+    <button onclick="num()">Enter</button>
+    <div id="print"></div>
+    <script>
+        function num(){
+            const num = document.getElementById("num").value.trim();
+            const print = document.getElementById("print");
+            if (num === ""){
+                print.textContent = "please input";
+                print.classList.add("error");
+                print.style.color = "red";
+                
+            }
+            else if (isNaN(num)){
+                print.textContent = "hay nhap mot so";
+                print.classList.add("error");
+                print.style.color = "red";
+            }
+            else{
+                print.textContent = "ban da nhap dung";
+                print.classList.add("success");
+                print.style.color = "green";
+
+            }
+        
+        }
+    </script>
+</body>
+</html>
