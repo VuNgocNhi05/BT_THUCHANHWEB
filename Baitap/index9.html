@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>kiem tra ngay thang</h2>
+    <label for="checkdate">nhap ngay thang:</label>
+    <input type="text" id="checkdate" placeholder="dd-mm-yyy">
+    <button onclick="checkdate()">check</button>
+    <div id="print"></div>
+    <script>
+        function checkdate() {
+            const date = document.getElementById("checkdate").value.trim();
+            const print = document.getElementById("print");
+            const regex = /^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-\d{4}$/;
+            if (date === ""){
+                print.textContent = "nhap du ngay thang nam";
+                print.classList.add("error");
+                print.style.color = "red";
+            }
+            else if (regex.test(date)){
+                print.textContent = "ngay thang hop le";
+                print.classList.add("success");
+                print.style.color = "green";
+            }
+            else {
+                print.textContent = " khong lop le";
+                print.classList.add("error");
+                print.style.color = " red"
+            }
+        }
+    </script>
+</body>
+</html>
