@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Hello</h2>
+        <label for="name">Nhap:</label>
+        <input type="text" id="name" placeholder="nhap ...">
+        <button onclick="update()">Click</button>
+        <div id="print"></div>
+        <script>
+            function update() {
+                const name3 = document.getElementById("name").value.trim();
+                const print = document.getElementById("print");
+                if (name3 === "") {
+                    print.textContent = "ban chua nhap gi ca";
+                }
+                else if (isNaN(name3)) {
+                    print.textContent ="ban vua nhap mot chuoi";
+                }
+                else {
+                    print.textContent = " ban vua nhap mot so";
+                }
+                
+            }
+        </script>
+    </div>
+</body>
+</html>
