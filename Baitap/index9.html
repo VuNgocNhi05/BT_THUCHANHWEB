@@ -15,13 +15,13 @@
         function checkdate() {
             const date = document.getElementById("checkdate").value.trim();
             const print = document.getElementById("print");
-            const regex = /^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-\d{4}$/;
+            const regex = /^(0[1-9]|[12][0-9]|3[0-1])-(0[1-9]|1[0-2])-\d{4}$/;
             if (date === ""){
                 print.textContent = "nhap du ngay thang nam";
                 print.classList.add("error");
                 print.style.color = "red";
             }
-            else if (regex.test(date)){
+            else if (!regex.test(date)){
                 print.textContent = "ngay thang hop le";
                 print.classList.add("success");
                 print.style.color = "green";

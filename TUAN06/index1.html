@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="inputdate" >nhap ngay thang nam:</label>
+    <input id="inputdate" type="date">
+    <button onclick="checkdate()">check</button>
+    <div id="print"></div>
+    <script>
+        function checkdate() {
+            const indate = document.getElementById("inputdate");
+            const print = document.getElementById("print");
+            const mydate = new Date(indate.value);
+            const today = new Date();
+            if (mydate.getTime()> today.getTime()){
+                print.textContent = "ngay trong tuong lai";
+            }
+            else if ( mydate.getTime()< today.getTime()){
+                print.textContent = "ngay trong qua khu";
+            }
+            else{
+                print.textContent = " ngay hien tai"
+            }
+            console.log(mydate);
+            
+        }
+    </script>
+    
+    
+</body>
+</html>
