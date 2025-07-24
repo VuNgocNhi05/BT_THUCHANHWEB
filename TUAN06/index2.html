@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="birthdate">nhap ngay thang nam:</label>
+    <input type="date" id="birthdate">
+    <button onclick="checkbirth()">Check</button>
+    <div id="print"></div>
+    <script>
+        function checkbirth() {
+            const birth = document.getElementById("birthdate");
+            const print = document.getElementById("print");
+            const mydate = new Date(birth.value);
+            const today = new Date();
+    
+            
+    
+            if (mydate.getTime() > today.getTime()) {
+                print.className = "error";
+                print.textContent = "Ngay thang nam khong hop le";
+                print.style.color = "red";
+            } else {
+                print.className = "success";
+                print.textContent = "Ngay thang nam hop le";
+                print.style.color = "green";
+            }
+        }
+    </script>
+    
+</body>
+</html>
